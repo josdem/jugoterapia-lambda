@@ -4,8 +4,9 @@ import com.amazonaws.services.lambda.runtime.Context;
 
 public class HelloLambda {
 
-  public String mainHandler(String name, Context context) {
-    return String.format("Hello %s.", name);
+  public ResponseClass mainHandler(RequestClass request, Context context) {
+    String greeting = String.format("Hello %s %s", request.name, request.lastname);
+    return new ResponseClass(greeting);
   }
 
 }

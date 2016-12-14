@@ -1,6 +1,6 @@
-package com.jos.dem.model;
+package com.jos.dem;
 
-public class Person {
+public class RequestClass{
   private String name;
   private String lastname;
 
